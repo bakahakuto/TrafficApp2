@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="title">
+        <item>หัวข้อ1</item>
+        <item>หัวข้อ2</item>
+        <item>หัวข้อ3</item>
+        <item>หัวข้อ4</item>
+        <item>หัวข้อ5</item>
+        <item>หัวข้อ6</item>
+        <item>หัวข้อ7</item>
+        <item>หัวข้อ8</item>
+        <item>หัวข้อ9</item>
+        <item>หัวข้อ10</item>
+        <item>หัวข้อ11</item>
+        <item>หัวข้อ12</item>
+        <item>หัวข้อ13</item>
+        <item>หัวข้อ14</item>
+        <item>หัวข้อ15</item>
+        <item>หัวข้อ16</item>
+        <item>หัวข้อ17</item>
+        <item>หัวข้อ18</item>
+        <item>หัวข้อ19</item>
+        <item>หัวข้อ20</item>
+
+    </string-array>
+    <string-array name="detail">
+        <item>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</item>
+        <item>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</item>
+        <item>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</item>
+        <item>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</item>
+        <item>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</item>
+        <item>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</item>
+        <item>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</item>
+        <item>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</item>
+        <item>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</item>
+        <item>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</item>
+        <item>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</item>
+        <item>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</item>
+        <item>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</item>
+        <item>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</item>
+        <item>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</item>
+        <item>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</item>
+        <item>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</item>
+        <item>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</item>
+        <item>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</item>
+        <item>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</item>
+    </string-array>
+
+</resources>
