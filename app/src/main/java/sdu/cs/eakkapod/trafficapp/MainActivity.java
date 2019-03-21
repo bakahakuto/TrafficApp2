@@ -1,7 +1,11 @@
 package sdu.cs.eakkapod.trafficapp;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
             R.drawable.traffic_11, R.drawable.traffic_12, R.drawable.traffic_13, R.drawable.traffic_14, R.drawable.traffic_15,
             R.drawable.traffic_16, R.drawable.traffic_17, R.drawable.traffic_18, R.drawable.traffic_19, R.drawable.traffic_20
             };
-    String[] titleStrings, detailStrings;
+    String[] titleStrings, detailStrings, subStrings;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,9 +34,35 @@ public class MainActivity extends AppCompatActivity {
         titleStrings = getResources().getStringArray(R.array.title);
         detailStrings = getResources().getStringArray(R.array.detail);
 
+        // ทำ subStrings detail เพื่อตัด detail ให้สั้นลง
+        subStrings = new String[detailStrings.length];
+        for (int i = 0; i < detailStrings.length; i++) {
+            subStrings[i] = detailStrings[i].substring(0, 20) + "....";
+        } //end for
+
         //create ListView
-        MyAdapter myAdapter = new MyAdapter(MainActivity.this,ints,titleStrings,detailStrings);
+        MyAdapter myAdapter = new MyAdapter(MainActivity.this,ints,titleStrings,subStrings);
         listView.setAdapter(myAdapter);
 
-    } // onCreate end
+        // เชื่อมแต่ละรายการใน ListView ไปที่ detail
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
+                Intent detailIntent = new Intent(MainActivity.this, Detail.class);
+                detailIntent.putExtra("Title", titleStrings[i]);
+                detailIntent.putExtra("Detail", detailStrings[i]);
+                detailIntent.putExtra("Logo", ints[i]);
+                startActivity(detailIntent);
+
+            }
+        }); // end setOnItemClickListener
+
+    } // onCreate method end
+
+    public void clickMoreInfo(View view) {
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("https://www.dlt.go.th/th/"));
+        startActivity(intent);
+    } // end clickMoreInfo method
+
 } // Class end

@@ -28,12 +28,12 @@ public class MyAdapter extends BaseAdapter {
     }
 
     @Override
-    public Object getItem(int position) { //ไม่ใช้
+    public Object getItem(int i) { //ไม่ใช้
         return null;
     }
 
     @Override
-    public long getItemId(int position) { //ไม่ใช้
+    public long getItemId(int i) { //ไม่ใช้
         return 0;
     }
 
